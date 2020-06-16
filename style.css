@@ -24,8 +24,80 @@ body, h1, h2, h3, h4, h5, h6{
     bottom: 0;
 }
 
-.navbar{
+.bar-block .dropdown-hover,.bar-block .dropdown-click{width:100%}
 
+.bar-block .dropdown-hover .dropdown-content,.bar-block .dropdown-click .dropdown-content{min-width:100%}
+
+.bar-block .dropdown-hover .button,.bar-block .dropdown-click .button{width:100%;text-align:left;padding:8px 16px}
+
+.main,#main{
+    transition: margin-left .4s
+}
+
+.modal{
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.4)
+}
+
+.modal-content{
+    margin: auto;
+    background-color:#fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px
+}
+
+.bar{
+    width:100%;
+    overflow:hidden
+}.center .bar{
+    display:inline-block;
+    width:auto
+}
+
+.bar .bar-item{
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline:0
+}
+
+.bar .dropdown-hover,.bar .dropdown-click{
+    position: static;
+    float: left
+}
+
+.bar .button{
+    white-space: normal
+}
+
+.bar-block .bar-item{
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0}
+
+.bar-block.center .bar-item{
+    text-align:center
+}.block{
+    display: block;
+    width: 100%
 }
 
 .min-opacity{
@@ -43,7 +115,26 @@ body, h1, h2, h3, h4, h5, h6{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
+/* asdads */
 
+
+.button:hover{color:#000!important;background-color:#ccc!important}
+.btn,.button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.btn,.button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none} 
+.disabled,.btn:disabled,.button:disabled{cursor:not-allowed;opacity:0.3}.disabled *,:disabled *{pointer-events:none}
+.dropdown-hover:hover > .button:first-child,.dropdown-click:hover > .button:first-child{background-color:#ccc;color:#000}
+.bar-block .dropdown-hover .button,.bar-block .dropdown-click .button{width:100%;text-align:left;padding:8px 16px}
+.bar .button{white-space:normal}
+.dropdown-hover.mobile,.dropdown-hover.mobile .btn,.dropdown-hover.mobile .button,.dropdown-click.mobile,.dropdown-click.mobile .btn,.dropdown-click.mobile .button{width:100%}}
+.button:hover{color:#000!important;background-color:#ccc!important}
+.black,.hover-black:hover{color:#fff!important;background-color:#000!important}
+@media (max-width:992px) and (min-width:601px){.hide-medium{display:none!important}}
+@media (min-width:993px){.modal-content{width:900px}.hide-large{display:none!important}.sidebar.collapse{display:block!important}}
+.left-align{text-align:left!important}.right-align{text-align:right!important}.justify{text-align:justify!important}.center{text-align:center!important}
+.leftbar{border-left:6px solid #ccc!important}.rightbar{border-right:6px solid #ccc!important}
+.left{float:left!important}.right{float:right!important}
+
+/* asdasd */
 
 .bgimg-1, .bgimg-2, .bgimg-3{
     background-attachment: fixed;
@@ -66,6 +157,14 @@ body, h1, h2, h3, h4, h5, h6{
 .bgimg-3{
     background-image: url();
     min-height: 400px;
+}
+
+.wide{
+    letter-spacing: 10px;
+}
+
+.hover-opacity{
+    cursor: pointer;
 }
 
 @media only screen and(max-device-width: 1600px){
