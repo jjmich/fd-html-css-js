@@ -1,17 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang='en'>
+    <head>
+        <title>Prop 7 - JM</title>
 
-    
-    <title>Document</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
 
-</head>
-<body>
-    XD    
-</body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+        <div class="navbar-top">
+            <div class="navbar center navbar-shadow hide" id="navigationBar">
+              <a href="#firma" class="navbar-item navbar-button"> FIRMA </a>
+              <a href="#aktual" class="navbar-item navbar-button"> AKTUALNOSCI </a>
+              <a href="#uslugi" class="navbar-item navbar-button"> ZAKRES USLUG </a>
+              <a href="#real" class="navbar-item navbar-button"> REALIZACJE </a>
+              <a href="#flota" class="navbar-item navbar-button"> FLOTA </a>
+              <a href="#kontakt" class="navbar-item navbar-button"> KONTAKT </a>
+            </div>
+        </div>
+
+        <header class="container row">
+            <div class="column-small white"></div>
+            <div class="column-logo center padding-for-rows">
+                <span class="font-xlarge text-blue" style="font-weight: 900;" id="logo">LOGO</span>
+            </div>
+            <div class="column-nav center padding-for-rows nav-text">
+                <div id="links">
+                           <a href='#firma' class="pipe">FIRMA</a> 
+                           <a href='#aktual' class="pipe">AKTUALNOSCI</a>
+                           <a href='#uslugi'class="pipe">ZAKRES&nbsp;USLUG </a>
+                           <a href='#real' class="pipe">REALIZACJE </a>
+                           <a href='#flota' class="pipe">FLOTA </a>
+                           <a href='#kontakt'class="pipe">KONTAKT </a>
+                </div>
+            </div>
+            <div class="column-small white"></div>
+        </header>
+
+        <div class="container row" id="home">
+            <div class="column-small bgnd-image-1">
+                <div class="blue-a" style="width: 100%; height: 100%;"></div>
+            </div>
+            <div class="column-medium bgnd-image-2 parallax-scroll padding-for-rows" id="home-left" onclick="activateSepia(this.id)">
+            </div>
+            <div class="column-medium bgnd-image-2 parallax-scroll">
+                <div class="grey-a padding-for-rows" style="width: 100%; height: 100%;">
+                <div class="text-white font-large"><b>DOSTARCZA NA KONTYNENT AMERYKI POLNOCNEJ</b></div>
+                <div class="center"><div class="separator-bar white"></div></div>
+                <div class="center text-white font-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nisi nostrum facilis ea quos soluta maiores dignissimos, consectetur voluptatem aliquam quod expedita. Magni, vero eum! Consectetur atque quis officiis similique.
+                Quos voluptatibus, quo obcaecati repellat quas dolore? Similique odio quae voluptas possimus culpa perferendis facilis numquam, ab magnam? Illo sed officia unde corrupti illum obcaecati quod minus fuga nobis ratione.
+                Ipsum illo amet architecto qui commodi maxime, eos ad, deleniti saepe libero harum animi enim ipsa placeat dignissimos necessitatibus, magni est hic. Iste, vel? Ut quod tenetur corrupti deserunt aliquid?</div>
+                </div>
+            </div>
+            <div class="column-small bgnd-image-3">
+                <div class="red-a" style="width: 100%; height: 100%;"></div>
+            </div>
+        </div>
+
+        <div class="container row" id="firma">
+            <div class="column-small lightgrey"></div>
+            <div class="column-medium darkblue padding-for-rows">
+                <div class="text-white">
+                    <span class="font-large"><b>FIRMA</b></span>
+                    <span class="font-medium" style="padding-left: 25px;">HISTORIA | CERTYFIKATY | REFERENCJE</span>
+                </div>
+                    <div class="center"><div class="separator-bar white"></div></div>
+                    <div class="text-white font-xlarge">INNOWACYJNE ROZWIAZANIA POPARTE <br> <b>150 LETNIM DOSWIADCZENIEM</b></div>
+            </div>
+            <div class="column-medium bgnd-image-4"></div>
+            <div class="column-small lightgrey"></div>
+        </div>
+
+
+        <div class="container row" id="aktual">
+            <div class="column-small white"></div>
+            <div class="column-medium bgnd-image-5">
+                <div class="grey-a padding-for-rows" style="width: 100%; height: 100%;">
+                <div class="text-white font-large"><b>DOSTARCZA NA KONTYNENT AMERYKI POLNOCNEJ</b></div>
+                <div class="center"><div class="separator-bar white"></div></div>
+                <div class="center text-white font-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nisi nostrum facilis ea quos soluta maiores dignissimos, consectetur voluptatem aliquam quod expedita. Magni, vero eum! Consectetur atque quis officiis similique.
+                Quos voluptatibus, quo obcaecati repellat quas dolore? Similique odio quae voluptas possimus culpa perferendis facilis numquam, ab magnam? Illo sed officia unde corrupti illum obcaecati quod minus fuga nobis ratione.
+                Ipsum illo amet architecto qui commodi maxime, eos ad, deleniti saepe libero harum animi enim ipsa placeat dignissimos necessitatibus, magni est hic. Iste, vel? Ut quod tenetur corrupti deserunt aliquid?</div>
+                </div>
+            </div>
+            <div class="column-medium red padding-for-rows">
+                <div class="text-white font-large"><b>AKTUALNOSCI</b></div>
+                <div class="center"><div class="separator-bar white"></div></div>
+                <div class="center text-white font-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nisi nostrum facilis ea quos soluta maiores dignissimos, consectetur voluptatem aliquam quod expedita. Magni, vero eum! Consectetur atque quis officiis similique.
+                Quos voluptatibus, quo obcaecati repellat quas dolore? Similique odio quae voluptas possimus culpa perferendis facilis numquam, ab magnam? Illo sed officia unde corrupti illum obcaecati quod minus fuga nobis ratione.
+                Ipsum illo amet architecto qui commodi maxime, eos ad, deleniti saepe libero harum animi enim ipsa placeat dignissimos necessitatibus, magni est hic. Iste, vel? Ut quod tenetur corrupti deserunt aliquid?</div>
+            </div>
+            <div class="column-small white"></div>
+        </div>
+        <div class="container row" id="uslugi">
+            <div class="column-full bgnd-image-6 parallax-scroll">
+                <div class="column-small cyan-a"></div>
+                <div class="column-large cyan-a padding-for-rows">
+                    <div class="text-white font-large"><b>ZAKRES USŁUG</b></div>
+                    <div class="text-white font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsum amet numquam. Eius minus minima saepe dignissimos unde harum alias ullam delectus quos. Quos eveniet expedita accusantium mollitia? Veniam, eos?</div>
+                    <div class="center"><div class="separator-bar white"></div></div>
+                    <div class="text-white font-xlarge">KOMPLEKSOWE USŁUGI TRANSPORTOWE PROJEKTÓW CARGO I NIE TYLKO</div>
+                </div>
+                <div class="column-small cyan-a"></div>
+            </div>
+        </div>
+        <div class="container row" id="real">
+            <div class="column-small opacity-med bgnd-image-7"></div>
+            <div class="column-medium bgnd-image-8"></div>
+            <div class="column-medium padding-for-rows bgnd-image-9">
+                <div class="text-white font-large"><b>REALIZACJE</b></div>
+                <div class="center"><div class="separator-bar white"></div></div>
+                <div class="text-white font-xlarge">GWARANCJA FACHOWEJ REALIZACJI NAJBARDZIEJ WYMAGAJACYCH ZLECEN</div>
+            </div>
+            <div class="column-small opacity-med bgnd-image-10"></div>
+        </div>
+        <div class="container row" id="flota">
+            <div class="column-small white"></div>
+            <div class="column-medium red padding-for-rows">
+                <div class="text-white font-large"><b>FLOTA</b></div>
+                <div class="text-white font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nam deserunt quasi distinctio ullam ut ex aut, adipisci vitae beatae esse dolor omnis vero blanditiis animi sunt voluptatem aspernatur exercitationem.</div>
+                <div class="center"><div class="separator-bar white"></div></div>
+                <div class="text-white font-large">NOWOCZESNA I WYSPECJALIZOWANA FLOTA</div>
+            </div>
+            <div class="column-medium bgnd-image-11 parallax-scroll"></div>
+            <div class="column-small white"></div>
+        </div>
+
+        <div class="container row" id="kontakt">
+            <div class="column-small lightgrey"></div>
+            <div class="column-medium center darkgrey padding-for-rows">
+                <div class="text-white">
+                    <span class="font-large"><b>SERDECZNIE ZAPRASZAMY WSZYSTKICH ZAINTERESOWANYCH NASZĄ OFERTĄ.</b></span>
+                </div>
+            </div>
+            <div class="column-medium grey-a padding-for-rows">
+                <div class="text-white font-large"><b>KONTAKT</b></div>
+                    <div class="center"><div class="separator-bar white"></div></div>
+                    <div class="center text-white font-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nisi nostrum facilis ea quos soluta maiores dignissimos, consectetur voluptatem aliquam quod expedita. Magni, vero eum! Consectetur atque quis officiis similique.
+                    Quos voluptatibus, quo obcaecati repellat quas dolore? Similique odio quae voluptas possimus culpa perferendis facilis numquam, ab magnam? Illo sed officia unde corrupti illum obcaecati quod minus fuga nobis ratione.
+                    Ipsum illo amet architecto qui commodi maxime, eos ad, deleniti saepe libero harum animi enim ipsa placeat dignissimos necessitatibus, magni est hic. Iste, vel? Ut quod tenetur corrupti deserunt aliquid?</div>           
+            </div>
+            <div class="column-small lightgrey"></div>
+        </div>
+        <footer>
+            <div class="container darkblue center" style="width: 100%; height: 100%;">
+                <span class="font-xlarge text-white text-left" id="logo">LOGO</span>
+                <span class="font-large text-white" id="logo">Lorem ipsum dolor sit</span>
+            </div>
+        </footer>
+    </body>
+    <script 
+        src="scripts.js"></script>
 </html>
