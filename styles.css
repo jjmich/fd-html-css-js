@@ -11,8 +11,9 @@ header{
     display: flex;
     color: darkblue;
     flex-wrap: wrap;
+    flex-direction: row;
     overflow: hidden;
-    height: 150px;
+    height: 170px;
 }
 .column-logo{
     display: flex;
@@ -22,12 +23,14 @@ header{
 .column-nav{
     display: flex;
     flex: 40%;
+    flex-direction: row;
     max-width: 800px;
+    min-width: 115px;
     word-wrap: break-word;
 }
 
 .pipe:not(:first-child):before{
-    content: '|';
+    content: ' | ';
     padding: 4px;
     color:red;
 }
@@ -42,7 +45,7 @@ footer{
     color: white;
     flex-wrap: wrap;
     overflow: hidden;
-    height: 150px;
+    height: 170px;
 }
 .row{
     display: flex;
